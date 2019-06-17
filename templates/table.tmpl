@@ -1,0 +1,28 @@
+ <TABLE class= "myTable" border="1">
+        <tr class="headingTr">
+            <th>vid</th>
+            <th>data</th>
+            <th>time</th>
+            <th>ua</th>
+            <th>ip</th>
+            <th>score</th>
+            <th>detail</th>
+            <th>uid</th>
+            <th>jsid</th>
+        </tr>
+
+        {{range .results}}
+            <tr>
+                <td id=vid>{{.VId}}</td>                    
+                <td id=data>{{.Tokendata}}</td>                    
+                <td id=time>{{.Time}}</td>                    
+                <td id=ua>{{.UserAgent}}</td>                    
+                <td id=ip>{{.Ip}}</td>                    
+                <td id=score>{{.RiskScore}}</td>                    
+                <td id=detail>{{.Detail}}</td>                    
+                <td id=uid>{{.UId}}</td>                    
+                <td id=jsid>{{.JsId}}</td>                    
+            </tr>
+        {{end}}
+ </TABLE>
+
