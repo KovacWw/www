@@ -7,5 +7,4 @@ mv /tmp/ww/templates /templates
 supervisord
 supervisorctl start all
 
-tail -f /dev/null
-
+tail -f /var/log/handle_out.log
