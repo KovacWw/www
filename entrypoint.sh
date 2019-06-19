@@ -6,7 +6,7 @@ mv /tmp/ww/templates /templates
 
 echo "2019/6/19 16:57"
 
-supervisord
+supervisord -c "/etc/supervisor/supervisord.conf"
 supervisorctl start all
 
 tail -f /var/log/handle_out.log
